@@ -17,7 +17,7 @@ use HTTP::Date;
 use Config::Properties;
 
 #Read the apiKey and secretKey values from the property file
-my $pfn = "./dnsmeapi.properties";
+my $pfn = "/opt/cloudshop/tools/dnsme/dnsmeapi.properties";
 
 if (! -f $pfn) {
     die "Property file " . $pfn . " not found";
