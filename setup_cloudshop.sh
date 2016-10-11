@@ -16,8 +16,8 @@ rm /var/www/html/index.html
 
 mysql --user=root --password=password < db/db.sql
 
-sed -i.bak "s/localhost\//$2\//" /var/www/html/config.php
-sed -i.bak "s/localhost\//$2\//" /var/www/html/admin/config.php
+sed -i.bak "s/localhost\//$1\//" /var/www/html/config.php
+sed -i.bak "s/localhost\//$1\//" /var/www/html/admin/config.php
 
 cd ..
 rm -rf temp
