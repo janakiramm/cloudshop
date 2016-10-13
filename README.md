@@ -1,2 +1,2 @@
-# cloudshop
-cloudshop
+# CloudShop on DigitalOcean
+
