@@ -1,4 +1,4 @@
-#sudo apt-get -y update
+sudo apt-get -y update
 
 dbpass=password
 export DEBIAN_FRONTEND=noninteractive
