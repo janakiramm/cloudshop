@@ -10,9 +10,6 @@ sudo apt-get -y install mysql-server mysql-client  php5-mysql
 
 mysql --user=root --password=password < db.sql
 
-echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;" >> perm.sql
-mysql -u root --password=password < perm.sql
-
 sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
 service mysql stop
 service mysql start
